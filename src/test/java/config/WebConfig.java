@@ -12,7 +12,6 @@ public interface WebConfig extends Config {
     @Key("enable.video")
     @DefaultValue("false")
     boolean isEnableVideo();
-/*
 
     @Key("browser")
     @DefaultValue("chrome")
@@ -28,7 +27,7 @@ public interface WebConfig extends Config {
 
     @Key("remote.driver")
     String getRemoteDriver( );
-*/
+
 
     @Key("server")
     @DefaultValue("http://hub-cloud.browserstack.com/wd/hub")
