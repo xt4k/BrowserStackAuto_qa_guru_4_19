@@ -76,4 +76,10 @@ task ios_tests(type: Test) {
     useJUnitPlatform {
         includeTags 'ios'
     }
+
+    task mobile_tests(type: Test) {
+        useJUnitPlatform {
+            includeTags 'ios_android'
+        }
+    }
 }

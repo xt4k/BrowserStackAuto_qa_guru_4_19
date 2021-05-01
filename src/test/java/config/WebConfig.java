@@ -28,7 +28,6 @@ public interface WebConfig extends Config {
     @Key("remote.driver")
     String getRemoteDriver( );
 
-
     @Key("server")
     @DefaultValue("http://hub-cloud.browserstack.com/wd/hub")
     String getServer();
