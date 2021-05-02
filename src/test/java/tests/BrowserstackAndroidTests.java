@@ -16,14 +16,15 @@ import java.util.List;
 @Tag("android")
 public class BrowserstackAndroidTests {
 
+    @Tag("original_android")
     @Test
     void searchTest() throws MalformedURLException, InterruptedException {
 
         DesiredCapabilities caps = new DesiredCapabilities();
 
         // Set your access credentials
-        caps.setCapability("browserstack.user", "egor329");
-        caps.setCapability("browserstack.key", "BosBWYNkXzixszWznqEk");
+        caps.setCapability("browserstack.user", "vasyaivanov_x2cO65");
+        caps.setCapability("browserstack.key", "NvtaxwxMSa6MZyMcyb8i");
 
         // Set URL of the application under test
         caps.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");

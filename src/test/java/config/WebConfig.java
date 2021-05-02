@@ -16,52 +16,42 @@ public interface WebConfig extends Config {
     @Key("browser")
     @DefaultValue("chrome")
     String getBrowser( );
-
+ /*
     @Key("browser.version")
     @DefaultValue("89")
-    String getBrowserVersion( );
+    String getBrowserVersion( );*/
 
-    @Key("base.url")
-    @DefaultValue("https://demoqa.com/automation-practice-form")
+    @Key("base.url")//    @DefaultValue("https://demoqa.com/automation-practice-form")
     String getBaseUrl( );
 
     @Key("remote.driver")
     String getRemoteDriver( );
 
-    @Key("server")
-    @DefaultValue("http://hub-cloud.browserstack.com/wd/hub")
+    @Key("server")//    @DefaultValue("http://hub-cloud.browserstack.com/wd/hub")
     String getServer();
 
-    @Key("username")
-    @DefaultValue("vasyaivanov_x2cO65")
+    @Key("username")//    @DefaultValue("vasyaivanov_x2cO65")
     String getUser();
 
-    @Key("access_key")
-    @DefaultValue("NvtaxwxMSa6MZyMcyb8i")
+    @Key("access_key")   // @DefaultValue("NvtaxwxMSa6MZyMcyb8i")
     String getKey();
 
-    @Key("project")
-    @DefaultValue("Small sample Android Project")
+    @Key("project")//    @DefaultValue("Small sample Android Project")
     String getProject();
 
-    @Key("name")
-    @DefaultValue("some tests name")
+    @Key("name")//    @DefaultValue("some tests name")
     String getTestName();
 
-    @Key("browserstack.debug")
-    @DefaultValue("true")
+    @Key("browserstack.debug")//    @DefaultValue("true")
     String getDebug();
 
-    @Key("app")
-    @DefaultValue("bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c")
+    @Key("app")   // @DefaultValue("bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c")
     String getBsApp();
 
-    @Key("device")
-    @DefaultValue("Google Pixel 3")
+    @Key("device")  //  @DefaultValue("Google Pixel 3")
     String getDevice();
 
-    @Key("os_version")
-    @DefaultValue("9.0")
+    @Key("os_version")  //  @DefaultValue("9.0")
     String getOsVer();
 
     @Key("build")

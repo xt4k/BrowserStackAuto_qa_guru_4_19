@@ -15,13 +15,14 @@ import java.net.URL;
 @Tag("ios")
 public class BrowserstackIosTests {
 
+    @Tag("original_ios")
     @Test
     void searchTest() throws MalformedURLException, InterruptedException {
         DesiredCapabilities caps = new DesiredCapabilities();
 
         // Set your access credentials
-        caps.setCapability("browserstack.user", "egor329");
-        caps.setCapability("browserstack.key", "BosBWYNkXzixszWznqEk");
+        caps.setCapability("browserstack.user", "vasyaivanov_x2cO65");
+        caps.setCapability("browserstack.key", "NvtaxwxMSa6MZyMcyb8i");
 
         // Set URL of the application under test
         caps.setCapability("app", "bs://444bd0308813ae0dc236f8cd461c02d3afa7901d");
@@ -56,7 +57,7 @@ public class BrowserstackIosTests {
         if (textOutput != null && textOutput.getText().equals("hello@browserstack.com"))
             assert (true);
         else
-            assert (false);
+            assert(false);
 
         // Invoke driver.quit() after the test is done to indicate that the test is completed.
         driver.quit();
