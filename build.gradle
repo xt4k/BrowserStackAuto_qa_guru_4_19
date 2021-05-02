@@ -89,7 +89,7 @@ task ios_tests(type: Test) {
         }
     }
 
-    task ios_tests(type: Test) {
+    task ios2_tests(type: Test) {
         useJUnitPlatform {
             includeTags 'iphone'
         }
