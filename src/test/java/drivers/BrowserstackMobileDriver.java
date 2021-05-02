@@ -2,7 +2,6 @@ package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
 import config.WebConfig;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.aeonbits.owner.ConfigFactory;
@@ -40,13 +39,13 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         capabilities.setCapability("browserstack.debug", config.getDebug());
         capabilities.setCapability("browser", config.getBrowser());
 
-        setProperty("bs.user",config.getUser());
-        setProperty("bs.key",config.getKey());
+        setProperty("bs.user", config.getUser());
+        setProperty("bs.key", config.getKey());
 
         if (config.getDevice().contains("iPhone"))
-            customDriver=new IOSDriver(getBrowserstackUrl(capabilities), capabilities);
+            customDriver = new IOSDriver(getBrowserstackUrl(capabilities), capabilities);
         else
-            customDriver =new AndroidDriver(getBrowserstackUrl(capabilities), capabilities);
+            customDriver = new AndroidDriver(getBrowserstackUrl(capabilities), capabilities);
         return customDriver;
     }
 }

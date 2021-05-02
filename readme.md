@@ -1,5 +1,5 @@
-Here used Owner lib for different mobile platforms.
--Denv=ios/android (iOS/android devices)
+Mini project use Allure and provide Video/Screenshot/PageCode in test reports.
+Here used Owner lib for different mobile platforms. -Denv=ios/android (iOS/android devices)
 
 Different test modes:
 Run tests with short syntax for iOS devices:

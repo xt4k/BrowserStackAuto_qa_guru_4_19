@@ -57,7 +57,7 @@ public class BrowserstackIosTests {
         if (textOutput != null && textOutput.getText().equals("hello@browserstack.com"))
             assert (true);
         else
-            assert(false);
+            assert (false);
 
         // Invoke driver.quit() after the test is done to indicate that the test is completed.
         driver.quit();

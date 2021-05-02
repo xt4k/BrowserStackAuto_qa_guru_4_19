@@ -22,7 +22,6 @@ public class TestBase {
     public static void beforeAll() {
         addListener("AllureSelenide", new AllureSelenide());
         browser = BrowserstackMobileDriver.class.getName();
-        step("capa "+browserCapabilities);
         startMaximized = false;
         browserSize = null;
         timeout = 10000;
