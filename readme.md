@@ -13,6 +13,3 @@ gradle clean -Denv=ios original_ios
 
 Run tests with "original" syntax for Android devices:
 gradle clean -Denv=android original_android
-
-
-
